@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <!--<div class="container-fluid bg-danger text-white mt-3 p-4">
+        <h2>Welcome to Bootstrap</h2>
+
+    </div>-->
+
+    <div class="row mt-3">
+        <div class="col-2">
+            <img src="data:image/jpeg;base64,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" alt="" width="100" height="50">
+        </div>
+        <div class="col-4">
+            <nav class="navbar navbar-expand-sm bg-light">
+
+                <div class="container-fluid">
+                  <!-- Links -->
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+                  </ul>
+                </div>
+              
+              </nav>
+        </div>
+        <div class="col-2">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Login</button>
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Please Login</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form action="" class="text-start">
+                            Username
+                            <input type="text" class="form-control">
+                            Password
+                            <input type="password" class="form-control">
+
+
+                        </form>
+                     
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Submit</button>
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-2">
+            <input type="search" class="form-control" placeholder="Search Here">
+
+        </div>
+        <div class="col-2">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+
+            </div>
+          
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://thumbs.dreamstime.com/b/vegetables-spices-ingredient-cooking-italian-food-black-wooden-old-board-rustic-style-76334485.jpg" height="600" alt="Los Angeles" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="https://thumbs.dreamstime.com/b/chef-cooking-kitchen-stove-flame-frying-pan-31742315.jpg" height="600"alt="Chicago" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="https://thumbs.dreamstime.com/b/food-ingredients-spices-cooking-delicious-italian-pizza-mushrooms-tomatoes-cheese-onion-oil-pepper-salt-basil-grater-olive-114683943.jpg" height="600" alt="New York" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="https://thumbs.dreamstime.com/b/cooking-table-spices-herbs-top-view-108371500.jpg" height="600" alt="Chicago" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="https://thumbs.dreamstime.com/b/chef-hotel-restaurant-kitchen-cooking-hands-working-micro-herb-decoration-preparing-vegetable-salad-70994069.jpg" height="600" alt="New York" class="d-block w-100">
+              </div>
+            </div>
+          
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+
+          <div class="col-6">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJCh1khR4ebhQpSjLj6BfrkXoHf07QOTRO1Q&usqp=CAU" alt="" width="640" height="400">
+          </div>
+          <div class="col-6">
+            <h3 class="d-flex justify-content-center text-primary">Registration Form</h3>
+          <form action="/action_page.php">
+            <div class="mb-3 mt-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your Name" name="name">
+              </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="mb-3">
+                <label for="pwd" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+              </div>
+            <div class="mb-3">
+              <label for="city" class="form-label">City</label>
+              <input type="text" class="form-control" id="pwd" placeholder="Enter Name of the City" name="city">
+            </div>
+            <div class="form-check mb-3">
+              <label class="form-check-label">
+                <label for="state" class="form-label">State</label>
+                <input class="form-control" list="states" name="state" id="state">
+                <datalist id="states">
+                <option value="Bihar">
+                <option value="Goa">
+                <option value="Gujarat">
+                <option value="Kerala">
+                <option value="Assam">
+                <option value="Delhi">
+                </datalist>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+          </form>
+          </div>
+          <div class="container mt-3">
+            <table class="table table-hover">
+              <tr class="table-primary" >
+                <th>S.No</th>
+                <th>Reg.No</th>
+                <th>Name of the Participant</th>
+                <th>Collaborative activity</th>
+                <th>Collaborating Agency</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>URK20CS1020</td>
+                <td>Rohan</td>
+                <td>Product Design and Analysis</td>
+                <td>CADD Centre</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>URK20CS1021</td>
+                <td>Roshini</td>
+                <td>Product Design and Analysis</td>
+                <td>CADD Centre</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>URK20CS1022</td>
+                <td>Rahul</td>
+                <td>Product Design and Analysis</td>
+                <td>CADD Centre</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>URK20CS1023</td>
+                <td>Raj</td>
+                <td>Product Design and Analysis</td>
+                <td>CADD Centre</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>URK20CS1024</td>
+                <td>Rakhi</td>
+                <td>Product Design and Analysis</td>
+                <td>CADD Centre</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>URK20CS1025</td>
+                <td>Anuj</td>
+                <td>Product Design and Analysis</td>
+                <td>CADD Centre</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>URK20CS1026</td>
+                <td>Pakhi</td>
+                <td>Product Design and Analysis</td>
+                <td>CADD Centre</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>URK20CS1027</td>
+                <td>Kinjal</td>
+                <td>Product Design and Analysis</td>
+                <td>CADD Centre</td>
+            </tr>
+
+            </table>
+          </div>
+       
+    
+    
+</body>
+</html>
+<!--mt means margin top and we can give values from 1 to 5-->
+<!--ms is margin left and me means end margin and mb means margin bottom-->
+<!--pt means padding top-->
+<!--bootstrap grid system allows up to 12 columns across the page-->
+<!--can create row , in one row we can divide columns we should use col class-->
+<!--col is for column-->
+<!--col-2 means that first column occupies width of 2-->
+<!--navbar will create a  -->
